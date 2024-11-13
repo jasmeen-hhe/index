@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعمنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- رأس الصفحة والتنقل -->
+    <header class="header">
+        <div class="logo">
+            <h1>مطعمنا</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3U-b0TJ4SwGHgxMR1lkg9XKGbr-vw2sT8OA&s" alt="شعار المطعم">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#features">المزايا</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الافتتاحي -->
+    <section id="landing" class="landing-section">
+        <h2>أهلاً بكم في مطعمنا</h2>
+        <p>استمتع بأفضل الأطباق في جو رائع وخدمة ممتازة</p>
+        <button onclick="window.location.href='#contact'">احجز الآن</button>
+    </section>
+
+    <!-- بطاقات المزايا -->
+    <section id="features">
+        <h2>المزايا</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/14/2b/34/go-ahead.jpg?w=200&h=-1&s=1" alt="أجواء مريحة">
+                <h3>أجواء مريحة</h3>
+                <p>نوفر لك أجواء هادئة وجميلة للاستمتاع بوجبتك.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ92mSWS09ORZpqYBIe_6EW6fG9m6bm00_4UA&s" alt="طهاة مهرة">
+                <h3>طهاة مهرة</h3>
+                <p>طهاة محترفون يضمنون لك أفضل النكهات.</p>
+            </div>
+            <div class="card">
+                <img src="https://www.arabicmenu.org/wp-content/uploads/2024/08/Al-Tazaj-resturant-menu-%D9%85%D9%86%D9%8A%D9%88-%D8%A7%D9%84%D8%B7%D8%A7%D8%B2%D8%AC-%D9%85%D8%B7%D8%B9%D9%85-%D8%B4%D8%A7%D9%87%D8%AF-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-%D9%83%D8%A7%D9%85%D9%84%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-2.webp" alt="مكونات طازجة">
+                <h3>مكونات طازجة</h3>
+                <p>نستخدم مكونات طازجة يومياً لضمان جودة الطعام.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- قسم آراء العملاء -->
+<section id="testimonials">
+    <h2>آراء العملاء</h2>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <img src="https://dreams.interpret-dreams-online.com/wp-content/uploads/2024/10/%D9%85%D8%B7%D8%B9%D9%85.jpg" alt="أحمد" class="client-img">
+            <p>"الطعام كان رائعًا والخدمة ممتازة. بالتأكيد سأعود مرة أخرى!"</p>
+            <h4>- أحمد</h4>
+        </div>
+        <div class="testimonial">
+            <img src="https://paseet.com/wp-content/uploads/2024/03/Employees.png" alt="سارة" class="client-img">
+            <p>"أفضل تجربة عشاء على الإطلاق. الجو كان مثاليًا والطعام لذيذ!"</p>
+            <h4>- سارة</h4>
+        </div>
+        <div class="testimonial">
+            <img src="https://static.hellooha.com/uploads/thumbs/articles/normal-mobile/csesqonjzdl65_article.jpg" alt="علي" class="client-img">
+            <p>"أجواء جميلة وخدمة راقية. أنصح الجميع بزيارة هذا المطعم."</p>
+            <h4>- علي</h4>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- نموذج الاتصال -->
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="contact-info">
+            <p>البريد الإلكتروني: jas@restaurant.com</p>
+            <p>الهاتف: 123-456-7890</p>
+        </div>
+        <p>&copy; 2024 مطعمنا. جميع الحقوق محفوظة.</p>
+        <div class="social-links">
+            <a href="https://facebook.com">فيسبوك</a>
+            <a href="https://twitter.com">تويتر</a>
+        </div>
+    </footer>
+
+</body>
+</html>
